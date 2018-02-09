@@ -80,7 +80,7 @@ The **Access Key ID** and **Secret Access Key** that you entered are automatical
 
 3. Add a job to your `config.yml` file that refers to the specific AWS service, for example S3 and add a workflow  that requires the `build-job` to succeed and a `filter` on the master branch.
 
-```
+```yaml
   deploy-job:
     docker:
       - image: my-image
