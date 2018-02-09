@@ -67,9 +67,9 @@ workflows:
               only: sequential-branch-filter
 ```
 
-If your deploy job uses any output from previous jobs, you can share that data by [using workspaces]({{ site.baseurl }}/2.0/workflows/#using-workspaces-to-share-data-among-jobs).
+The above configuration uses [branch-level filtering]({{ site.baseurl }}/2.0/workflows/#branch-level-job-execution) to ensure that the application is only deployed when the `sequential-branch-filter` is checked out.
 
-Deploying is usually dependent on a successful build. The following example uses a [workflow job filter]({{ site.baseurl }}/2.0/workflows/#using-contexts-and-filtering-in-your-workflows) to check that the `master` branch is checked out before running any deploy commands. Without this filter, deploy commands would be executed every time this job is triggered.
+If your deploy job uses any output from previous jobs, you can share that data by [using workspaces]({{ site.baseurl }}/2.0/workflows/#using-workspaces-to-share-data-among-jobs).
 
 ## AWS
 
