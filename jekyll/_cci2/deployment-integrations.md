@@ -69,7 +69,7 @@ workflows:
 
 The above configuration uses [branch-level filtering]({{ site.baseurl }}/2.0/workflows/#branch-level-job-execution) to ensure that the application is only deployed when the `sequential-branch-filter` is checked out.
 
-If your deploy job uses any output from previous jobs, you can share that data by [using workspaces]({{ site.baseurl }}/2.0/workflows/#using-workspaces-to-share-data-among-jobs).
+If your deploy job requires any output from previous jobs, you can share that data by [using workspaces]({{ site.baseurl }}/2.0/workflows/#using-workspaces-to-share-data-among-jobs).
 
 ## AWS
 
