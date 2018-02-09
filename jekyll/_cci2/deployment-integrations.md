@@ -16,7 +16,7 @@ CircleCI can be configured to deploy to virtually any service. This document pro
 ## Overview
 {:.no_toc}
 
-To deploy your application, add a [job]({{ site.baseurl }}/2.0/jobs-steps/#jobs-overview) to `.circleci/config.yml`. If your deploy requires any secrets, set them on the **Project Settings > Environment Variables** page of the CircleCI application.
+To deploy your application, add a [Job]({{ site.baseurl }}/2.0/jobs-steps/#jobs-overview) to `.circleci/config.yml`. If your deploy requires any secrets, set them on the **Project Settings > Environment Variables** page of the CircleCI application.
 
 Below is a [simple example](https://github.com/CircleCI-Public/circleci-demo-workflows/tree/sequential-branch-filter) of using [Workflows]({{ site.baseurl }}/2.0/workflows/) to deploy a Rails app on every successful build:
 
